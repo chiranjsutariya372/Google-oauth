@@ -5,7 +5,7 @@ const googleAuth=(passport)=>{
         new oauth(
         {
         clientID: '619023602807-g52k265m3ce1nuivpq740ufaqgsc1028.apps.googleusercontent.com',
-        clientSecret: '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',
+        clientSecret: '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', // api credentials for google
         callbackURL: 'http://localhost:8080/auth/google/callback'
         },
     
@@ -15,7 +15,7 @@ const googleAuth=(passport)=>{
         }
     ))
 
-    passport.serializeUser((user,done) => {
+    passport.serializeUser((user,done) => {k
         done(null,user.id)
     })
 
